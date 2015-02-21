@@ -3,6 +3,11 @@
 * Add gradle nature to the project in eclipse.
 * Run the **MainApplication**
 
+## Issues
+* Some searches ex. "big bang", run into the following problem as SQLite has a limit on the number of query variables (999).
+
+		[SQLITE_ERROR] SQL error or missing database (too many SQL variables)
+
 ## Reference:
 http://www.srccodes.com/p/article/8/Full-Text-Hibernate-Lucene-Search-Hello-World-Example-Using-Maven-and-SQLite
 
