@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+jar {
+    baseName = 'lucene-sqlite-search'
+    version =  '1.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('org.hibernate:hibernate-core:4.3.8.Final')
+    compile('org.hibernate:hibernate-search:5.0.1.Final')
+    compile('org.xerial:sqlite-jdbc:3.8.7')
+    compile('junit:junit:4.12')
+}
