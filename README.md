@@ -1,7 +1,7 @@
 # hello-hibernate-search
 * Pull the project.
 * Add gradle nature to the project in eclipse.
-* Run the *MainApplication*
+* Run the **MainApplication**
 
 ## Reference:
 http://www.srccodes.com/p/article/8/Full-Text-Hibernate-Lucene-Search-Hello-World-Example-Using-Maven-and-SQLite
