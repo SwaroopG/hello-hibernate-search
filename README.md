@@ -1,7 +1,7 @@
 # hibernate-sqlite-search
 * Pull the project.
 * Add gradle nature to the project in eclipse.
-* Run the **MainApplication**
+* Run the **MainApplication** or **gradle run**
 
 ## Issues
 * Some searches ex. "big bang", run into the following problem as SQLite has a limit on the number of query variables (999).

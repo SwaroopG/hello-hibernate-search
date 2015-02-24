@@ -14,7 +14,7 @@ import com.poorjar.hibernate.utils.HibernateUtil;
 /**
  * Main application
  */
-public class MainApplication
+public class AssetSearch
 {
 
     private static void doIndex() throws InterruptedException

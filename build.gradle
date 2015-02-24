@@ -1,5 +1,6 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
+apply plugin:'application'
 
 jar {
     baseName = 'hibernate-sqlite-search'
@@ -16,3 +17,5 @@ dependencies {
     compile('org.xerial:sqlite-jdbc:3.8.7')
     compile('junit:junit:4.12')
 }
+
+mainClassName = "com.poorjar.main.TrackSearch"
