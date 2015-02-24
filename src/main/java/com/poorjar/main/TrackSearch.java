@@ -85,33 +85,35 @@ public class TrackSearch
         doIndex();
 
         Scanner scanner = new Scanner(System.in);
-        try
+
+        String consoleInput = null;
+
+        while (true)
         {
-            String consoleInput = null;
+            // Prompt the user to enter query string
+            System.out.print("\n\nEnter search key (To exit type 'X')");
+            consoleInput = scanner.nextLine();
 
-            while (true)
+            if ("X".equalsIgnoreCase(consoleInput))
             {
-                // Prompt the user to enter query string
-                System.out.print("\n\nEnter search key (To exit type 'X')");
-                consoleInput = scanner.nextLine();
+                System.out.println("End");
+                System.exit(0);
+            }
 
-                if ("X".equalsIgnoreCase(consoleInput))
-                {
-                    System.out.println("End");
-                    System.exit(0);
-                }
-
+            try
+            {
                 List<Track> result = search(consoleInput);
                 System.out.println("\n\n>>>>>>Record found for '" + consoleInput + "'");
-
+                
                 for (Track track : result)
                 {
                     System.out.println(track);
                 }
+            } catch (Exception e)
+            {
+                System.out.println("Caught an exception!\n" + e.getLocalizedMessage());
+                continue;
             }
-        } finally
-        {
-            scanner.close();
         }
     }
 }
