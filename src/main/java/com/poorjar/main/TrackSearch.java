@@ -111,7 +111,7 @@ public class TrackSearch
                 }
             } catch (Exception e)
             {
-                System.out.println("Caught an exception!\n" + e.getLocalizedMessage());
+                System.out.println("Caught an exception!\n" + e.getCause());
                 continue;
             }
         }

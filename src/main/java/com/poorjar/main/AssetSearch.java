@@ -97,12 +97,19 @@ public class AssetSearch
                 System.exit(0);
             }
 
-            List<VodAsset> result = search(consoleInput);
-            System.out.println("\n\n>>>>>>Record found for '" + consoleInput + "'");
-
-            for (VodAsset asset : result)
+            try
             {
-                System.out.println(asset);
+                List<VodAsset> result = search(consoleInput);
+                System.out.println("\n\n>>>>>>Record found for '" + consoleInput + "'");
+
+                for (VodAsset asset : result)
+                {
+                    System.out.println(asset);
+                }
+            } catch (Exception e)
+            {
+                System.out.println("Caught an exception!\n" + e.getCause());
+                continue;
             }
         }
     }
